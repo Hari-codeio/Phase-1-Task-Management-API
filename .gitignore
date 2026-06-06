@@ -1,0 +1,23 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Packaging / build artifacts
+*.egg-info/
+build/
+dist/
+
+# Test / tooling caches
+.pytest_cache/
+
+# App data created at runtime
+tasks.json
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store

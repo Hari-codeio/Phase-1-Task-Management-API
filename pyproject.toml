@@ -1,0 +1,26 @@
+[project]
+name = "taskmanager"
+version = "0.1.0"
+description = "Phase 1 Task Management API — a beginner-friendly Python project"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+# Tools used for development/testing, installed with: pip install -e ".[dev]"
+dev = ["pytest"]
+
+[project.scripts]
+# Lets you launch the app by simply typing `taskmanager` in the terminal.
+taskmanager = "taskmanager.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+# So `pytest` can find the package under src/ without installing first.
+pythonpath = ["src"]
+testpaths = ["tests"]
